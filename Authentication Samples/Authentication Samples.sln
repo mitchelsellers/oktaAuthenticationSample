@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientAppOne", "ClientAppOne\ClientAppOne.csproj", "{15600593-290E-40C6-BF03-CC003E078882}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.SharedAuth", "Demo.SharedAuth\Demo.SharedAuth.csproj", "{8E074E73-DAB7-4BBE-972B-2B5C0F9736B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{15600593-290E-40C6-BF03-CC003E078882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15600593-290E-40C6-BF03-CC003E078882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15600593-290E-40C6-BF03-CC003E078882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E074E73-DAB7-4BBE-972B-2B5C0F9736B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E074E73-DAB7-4BBE-972B-2B5C0F9736B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E074E73-DAB7-4BBE-972B-2B5C0F9736B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E074E73-DAB7-4BBE-972B-2B5C0F9736B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

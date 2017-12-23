@@ -22,6 +22,7 @@ namespace ClientAppOne
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.ConfigureOktaAuthentication(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +40,7 @@ namespace ClientAppOne
 
             app.UseStaticFiles();
 
+            app.UseAuthentication(); //Added to support Okta
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
