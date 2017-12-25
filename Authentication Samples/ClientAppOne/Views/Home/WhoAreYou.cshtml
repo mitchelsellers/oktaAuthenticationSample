@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Who Are You?";
+}
+
+<h2>Who are you?</h2>
+<p>The following display shows all information that is available about the currently authenticated user.  All information comes from Okta.</p>
+
+<h3>Default User Properties</h3>
+<dl>
+    <dt>User.Identity.Name</dt>
+    <dd>@User.Identity.Name</dd>
+    <dt>User.Identity.AuthenticationType</dt>
+    <dd>@User.Identity.AuthenticationType</dd>
+</dl>
+
+<h3>Claims</h3>
+<dl>
+    @foreach(var claim in User.Claims)
+    {
+        <dt>@claim.Type</dt>
+        <dd>@claim.Value</dd>
+    }
+</dl>
+

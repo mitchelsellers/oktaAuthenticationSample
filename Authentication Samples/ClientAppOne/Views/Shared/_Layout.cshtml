@@ -33,6 +33,13 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    @if (Context.User.Identity.IsAuthenticated)
+                    {
+                        <li><a asp-controller="Home" asp-action="WhoAreYou">Who Are You</a></li>
+                    }
+                    else
+                    {
+                    <li><a asp-controller="Account" asp-action="Login">Login</a></li>}
                 </ul>
             </div>
         </div>
@@ -41,7 +48,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - ClientAppOne</p>
+            <p>&copy; 2017 - Authentication Demo Application - Mitchel Sellers</p>
         </footer>
     </div>
 

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ClientAppOne.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ClientAppOne.Controllers
 {
@@ -26,6 +27,12 @@ namespace ClientAppOne.Controllers
         {
             ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult WhoAreYou()
+        {
             return View();
         }
 
